@@ -332,6 +332,33 @@
             font-size: 0.8rem;
             color: var(--gray);
         }
+
+        /* Tool Card Link Styles */
+        .tool-card-link {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .tool-card-link:hover .tool-card {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        }
+
+        .category-card-link {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .category-card-link:hover .category-card {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+        }
+
+        .category-card-link .btn {
+            pointer-events: none;
+        }
         
         /* Features Section */
         .features {
@@ -630,6 +657,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="image-tools.html">Image Tools</a></li>
                     <li><a href="pdf-tools.html">PDF Tools</a></li>
+                    <li><a href="document-tools.html">Document Tools</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -655,30 +683,36 @@
                 <p>Discover our collection of powerful tools organized by category</p>
             </div>
             <div class="category-grid">
-                <div class="category-card">
-                    <div class="category-icon">
-                        <i class="fas fa-file-image"></i>
+                <a href="image-tools.html" class="category-card-link">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-file-image"></i>
+                        </div>
+                        <h3>Image Tools</h3>
+                        <p>Compress, convert, resize, and enhance your images with our powerful tools</p>
+                        <span class="btn btn-outline">Explore Tools</span>
                     </div>
-                    <h3>Image Tools</h3>
-                    <p>Compress, convert, resize, and enhance your images with our powerful tools</p>
-                    <a href="image-tools.html" class="btn btn-outline">Explore Tools</a>
-                </div>
-                <div class="category-card">
-                    <div class="category-icon">
-                        <i class="fas fa-file-pdf"></i>
+                </a>
+                <a href="pdf-tools.html" class="category-card-link">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3>PDF Tools</h3>
+                        <p>Merge, split, compress, and convert PDF files with ease</p>
+                        <span class="btn btn-outline">Explore Tools</span>
                     </div>
-                    <h3>PDF Tools</h3>
-                    <p>Merge, split, compress, and convert PDF files with ease</p>
-                    <a href="pdf-tools.html" class="btn btn-outline">Explore Tools</a>
-                </div>
-                <div class="category-card">
-                    <div class="category-icon">
-                        <i class="fas fa-file-alt"></i>
+                </a>
+                <a href="document-tools.html" class="category-card-link">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>Document Tools</h3>
+                        <p>Convert between document formats and optimize your files</p>
+                        <span class="btn btn-outline">Explore Tools</span>
                     </div>
-                    <h3>Document Tools</h3>
-                    <p>Convert between document formats and optimize your files</p>
-                    <a href="document-tools.html" class="btn btn-outline">Explore Tools</a>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -690,74 +724,69 @@
                 <p>These are our most frequently used tools by thousands of users daily</p>
             </div>
             <div class="tools-grid">
-                <div class="tool-card">
-    <div class="tool-image">
-        <i class="fas fa-compress-alt"></i>
-    </div>
-    <div class="tool-content">
-        <h3><a href="image-compressor.html">Image Compressor</a></h3>
-        <p>Reduce image file size without losing quality. Supports JPG, PNG, WebP.</p>
-        <div class="tool-meta">
-            <div class="tool-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <div class="tool-usage">50K+ uses today</div>
-        </div>
-    </div>
-    </div>
-                            <div class="tool-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
+                <a href="image-compressor.html" class="tool-card-link">
+                    <div class="tool-card">
+                        <div class="tool-image">
+                            <i class="fas fa-compress-alt"></i>
+                        </div>
+                        <div class="tool-content">
+                            <h3>Image Compressor</h3>
+                            <p>Reduce image file size without losing quality. Supports JPG, PNG, WebP.</p>
+                            <div class="tool-meta">
+                                <div class="tool-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <div class="tool-usage">50K+ uses today</div>
                             </div>
-                            <div class="tool-usage">50K+ uses today</div>
                         </div>
                     </div>
-                </div>
-                <div class="tool-card">
-                    <div class="tool-image">
-                        <i class="fas fa-file-pdf"></i>
-                    </div>
-                    <div class="tool-content">
-                        <h3>PDF Compressor</h3>
-                        <p>Make your PDF files smaller while preserving quality.</p>
-                        <div class="tool-meta">
-                            <div class="tool-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
+                </a>
+                <a href="pdf-compressor.html" class="tool-card-link">
+                    <div class="tool-card">
+                        <div class="tool-image">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div class="tool-content">
+                            <h3>PDF Compressor</h3>
+                            <p>Make your PDF files smaller while preserving quality.</p>
+                            <div class="tool-meta">
+                                <div class="tool-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="tool-usage">35K+ uses today</div>
                             </div>
-                            <div class="tool-usage">35K+ uses today</div>
                         </div>
                     </div>
-                </div>
-                <div class="tool-card">
-                    <div class="tool-image">
-                        <i class="fas fa-exchange-alt"></i>
-                    </div>
-                    <div class="tool-content">
-                        <h3>Image Converter</h3>
-                        <p>Convert between JPG, PNG, WebP, GIF and other formats.</p>
-                        <div class="tool-meta">
-                            <div class="tool-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                </a>
+                <a href="image-converter.html" class="tool-card-link">
+                    <div class="tool-card">
+                        <div class="tool-image">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <div class="tool-content">
+                            <h3>Image Converter</h3>
+                            <p>Convert between JPG, PNG, WebP, GIF and other formats.</p>
+                            <div class="tool-meta">
+                                <div class="tool-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="tool-usage">28K+ uses today</div>
                             </div>
-                            <div class="tool-usage">28K+ uses today</div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -810,7 +839,7 @@
         <div class="container">
             <h2>Ready to Optimize Your Files?</h2>
             <p>Join thousands of satisfied users who trust our tools for their daily file processing needs.</p>
-            <a href="image-tools.html" class="btn">Get Started Now</a>
+            <a href="all-tools.html" class="btn">Get Started Now</a>
         </div>
     </section>
     
@@ -821,10 +850,10 @@
                     <a href="index.html" class="footer-logo">ToolKitPro</a>
                     <p>Providing free, high-quality online tools for image and document processing since 2023.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 <div class="footer-links">
@@ -879,6 +908,20 @@
                     behavior: 'smooth'
                 });
             });
+        });
+
+        // Search functionality
+        document.querySelector('.search-bar button').addEventListener('click', function() {
+            const searchTerm = document.querySelector('.search-bar input').value;
+            if(searchTerm.trim()) {
+                window.location.href = `search.html?q=${encodeURIComponent(searchTerm)}`;
+            }
+        });
+
+        document.querySelector('.search-bar input').addEventListener('keypress', function(e) {
+            if(e.key === 'Enter') {
+                document.querySelector('.search-bar button').click();
+            }
         });
     </script>
 </body>
